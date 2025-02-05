@@ -42,6 +42,6 @@ public class Calculator {
             throw new IllegalArgumentException("The discount amount must be between 0 and 100");
         }
         double discount = (discountAmount / 100.0) * purchaseAmount;
-        return purchaseAmount;
+        return purchaseAmount - discount;
     }
 }
