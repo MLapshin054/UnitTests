@@ -34,12 +34,13 @@ public class Calculator {
         return Math.sqrt(num);
     }
 
-    public static double calculatingDiscount(double purchaseAmount, int discountAmount) {
+    // HW Task 01
+    public static double calculateDiscount(double purchaseAmount, int discountAmount) {
         if (purchaseAmount < 0) {
-            throw new IllegalArgumentException("The purchase amount cannot be negative.");
+            throw new ArithmeticException("The purchase amount cannot be negative.");
         }
         if (discountAmount < 0 || discountAmount > 100) {
-            throw new IllegalArgumentException("The discount amount must be between 0 and 100");
+            throw new ArithmeticException("The discount amount must be between 0 and 100");
         }
         double discount = (discountAmount / 100.0) * purchaseAmount;
         return purchaseAmount - discount;
