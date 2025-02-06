@@ -1,4 +1,4 @@
-package seminar01.HW01;
+package seminar01.HW01.Calculator;
 
 public class Calculator {
     public static int calculation(int firstOperand, int secondOperand, char operator) {

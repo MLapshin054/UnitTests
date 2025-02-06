@@ -1,4 +1,4 @@
-package seminar01.HW01;
+package seminar01.HW01.Calculator;
 
 import static org.assertj.core.api.Assertions.*;
 
